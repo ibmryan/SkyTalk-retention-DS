@@ -1,0 +1,6 @@
+{
+  "type" : "CONNECTED_TO_REMOTE_PROVIDER",
+  "generatedByVersion" : "29.2.13",
+  "generationTime" : 1675888695499,
+  "modelName" : "SkyTalk churn prediction - P4 XGB Classifier"
+}

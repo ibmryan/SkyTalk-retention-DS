@@ -1,0 +1,100 @@
+
+package cp4admin.customer_retention.retention_ml.customerlifetimevalue;
+
+
+public class Error
+        property "ads.typeId" "2"
+        property "de.generated" "true"
+{
+    public string code
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "code";
+    public string message
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "message";
+    public Error(string code, string message)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public Error()
+                property "dataio.default" "true";
+}
+
+public class Input
+        property "ads.typeId" "1"
+        property "com.fasterxml.jackson.annotation.JsonPropertyOrder" "{Gender,Status,Household,Est Income,Car Owner,Age,Paymethod,Usage,RatePlan}"
+        property "de.generated" "true"
+{
+    public java.lang.Double age
+                property "ads.attributeId" "6"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Age";
+    public string carOwner
+                property "ads.attributeId" "5"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Car Owner";
+    public java.lang.Double estIncome
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Est Income";
+    public string gender
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Gender";
+    public java.lang.Integer household
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Household";
+    public string paymethod
+                property "ads.attributeId" "7"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Paymethod";
+    public java.lang.Integer rateplan
+                property "ads.attributeId" "9"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "RatePlan";
+    public string status
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Status";
+    public java.lang.Double usage
+                property "ads.attributeId" "8"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Usage";
+    public Input(java.lang.Double age, string carOwner, java.lang.Double estIncome, string gender, java.lang.Integer household, string paymethod, java.lang.Integer rateplan, string status, java.lang.Double usage)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public Input()
+                property "dataio.default" "true";
+}
+
+public class Output
+        property "ads.typeId" "3"
+        property "com.fasterxml.jackson.annotation.JsonIgnoreProperties" {
+            ignoreUnknown "true"
+        }
+        property "de.generated" "true"
+{
+    public cp4admin.customer_retention.retention_ml.customerlifetimevalue.Error error
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "error";
+    public java.lang.Double prediction
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "prediction";
+    public Output(java.lang.Double prediction)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public Output()
+                property "dataio.default" "true";
+    public boolean inError()
+                property "de.generated" {
+                    $gen "com.ibm.decision.ml.integration.xom.InErrorTestGenerator",
+                    $target "BOM"
+                };
+    public static Output run(cp4admin.customer_retention.retention_ml.customerlifetimevalue.Input input)
+                property pureFunction "true";
+    public static Output run(com.ibm.decision.run.RunContext runContext, cp4admin.customer_retention.retention_ml.customerlifetimevalue.Input input)
+                property "de.generated" {
+                    $gen "com.ibm.decision.ml.integration.xom.PredictionRunGenerator",
+                    $target "BOM",
+                    providerInfoId "cp4admin/Customer-retention/SkyTalk ML provider1675888551651c9837662-9a47-4e2f-b208-45bd5c7b49ff"
+                }
+                property pureFunction "true";
+}
+

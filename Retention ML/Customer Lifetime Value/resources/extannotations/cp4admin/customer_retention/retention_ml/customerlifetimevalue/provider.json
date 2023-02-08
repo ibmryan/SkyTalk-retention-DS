@@ -1,0 +1,9 @@
+{
+  "name" : "cp4admin/Customer-retention/SkyTalk ML provider1675888551651",
+  "type" : "WML",
+  "description" : "",
+  "mlUrl" : "https://us-south.ml.cloud.ibm.com/ml/v4",
+  "authUrl" : "https://iam.bluemix.net/identity/token",
+  "instanceId" : "5587ae56-a612-4cd9-bb3a-2659d5c4c3e3",
+  "apiKey" : null
+}

@@ -1,0 +1,1 @@
+{"operationId":null,"body":"{\"customer\":{\"gender\":\"F\",\"location\":\"country\",\"marital_status\":\"S\",\"name\":\"Jenny Carter\",\"estimated_income\":12686,\"car_owner\":true,\"age\":70,\"household\":0},\"subscription\":{\"international_calls\":30,\"local_calls\":15,\"rate_plan\":\"Premium\",\"long_distance_calls\":35,\"payment_method\":\"CC\",\"usage\":64}}"}
